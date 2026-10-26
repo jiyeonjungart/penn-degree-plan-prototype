@@ -2,6 +2,7 @@ import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react
 import { CourseCard } from "./CourseCard";
 import { usePlan } from "../planContext";
 import { DND_MIME, type DragPayload } from "../data";
+import { pdpLogoSrc } from "../logo";
 
 const DOCK_COLLAPSED = 66;
 const DOCK_PAD_Y = 32; // 1rem top + bottom
@@ -202,6 +203,13 @@ export function Dock() {
           ))
         )}
       </div>
+      <img
+        className="dock-logo"
+        src={pdpLogoSrc}
+        alt="Penn Degree Plan"
+        width={30}
+        height={45}
+      />
     </div>
   );
 }

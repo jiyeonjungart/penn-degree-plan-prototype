@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { accountInitials } from "../data";
+import { pdpLogoSrc } from "../logo";
 import { usePlan } from "../planContext";
 
 function formatNotifTime(ts: number) {
@@ -45,7 +46,7 @@ export function TopBar() {
       <div className="topbar-brand">
         <img
           className="topbar-logo"
-          src="/pdp-logo.svg"
+          src={pdpLogoSrc}
           alt="Penn Degree Plan"
           width={30}
           height={45}
